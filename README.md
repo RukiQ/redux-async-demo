@@ -1,4 +1,6 @@
-本 demo 在 redux-async-demo 的基础上对路由进行了更改~
+最近在研究 redux 异步流，看了一些文章，都只是理论上的理解，自己动手实践一遍，才能理解地更深刻~~~
+
+### PS：redux-router-v4-demo 在 redux-async-demo 的基础上对路由进行了更改~
 
 #### 用到的技术（-> package.json）：
 
@@ -30,6 +32,7 @@
 请参考我的博文： [React Router 4：痛过之后的豁然开朗](http://www.jianshu.com/p/bf6b45ce5bcc)
 
 4）对 redux 异步流的详细介绍请参考我的博文：[聊一聊 redux 异步流之 redux-saga](http://www.jianshu.com/p/e84493c7af35)
+
 
 
 
