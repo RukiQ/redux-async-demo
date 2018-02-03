@@ -2,9 +2,9 @@
 
 ### 一、说明
 
-**01_redux-async-demo**：最开始的基础版本
+**redux-async-demo**：最开始的基础版本
 
-**02_redux-router-v4-demo**：在 **01\_redux-async-demo** 的基础上对路由进行了更改
+**redux-router-v4-demo**：在 **01\_redux-async-demo** 的基础上对路由进行了更改
 
 **03_redux-router-v4-optimize**：在 **02\_redux-router-v4-demo** 的基础上对模块结构进行了优化，分离了业务组件和纯组件，提高组件复用性，模块结构更加清晰。
 
