@@ -29,7 +29,7 @@
 
 ### 四、参考：
 
-1） webpack-react 脚手架采用了之前的demo：[react\_webpack\\_scaffold](https://github.com/RukiQ/scaffoldsForFE/tree/master/react_webpack_scaffold)
+1） webpack-react 脚手架采用了之前的demo：[react\_webpack\\_scaffold](https://github.com/RukiQ/scaffoldsForFE)
 
 2）页面样式参考了 [react-antd-demo](https://github.com/luckykun/About-React/tree/master/react-antd-demo)
 
