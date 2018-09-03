@@ -1,6 +1,7 @@
 本 demo 在 03_redux-router-v4-optimize 的基础上的进一步改进如下：
 
 - 升级了 webpack 4、react 16
+- 采用本地数据 mock
 - 添加了路由配置文件（按照 antd 的 Menu）
 
 > 通过路由配置来生成路由的方式是参考了 [Material-UI Theme](https://demos.creative-tim.com/material-dashboard-react/?_ga=2.55719595.10714530.1535703355-492283409.1535703355#/dashboard) 模板中的写法。 尽管在使用这个 UI 框架时，让我很抓狂，但是有些地方还是值得学习的。┐(￣ヮ￣)┌
