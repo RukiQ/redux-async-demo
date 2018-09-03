@@ -22,7 +22,7 @@ const mapDispatchToProps = (dispatch) => ({
         dispatch(() => {
             axios.get(GET_USERS_URL)
                 .then((response) => {
-                    dispatch({ type: GET_USERS_SUCESS, users: response.data })
+                    dispatch({ type: GET_USERS_SUCESS, users: response.data.data })
                 })
                 .catch((error) => {
                     dispatch({ type: GET_USERS_FAIL, error })

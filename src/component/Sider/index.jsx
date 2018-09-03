@@ -12,21 +12,44 @@ class Sider extends Component {
     }
 
     render() {
+        const { routes } = this.props;
+
         return (
             <div id="leftMenu">
-                <span className="logo" style={{marginLeft: '40px'}}>主菜单</span>
+                <span className="logo" style={{marginLeft: '40px'}}>
+                    <Link to={routes[0].path}>{routes[0].name}</Link>
+                </span>
                 <Menu theme="dark"
                     style={{ width: 200 }}
                     defaultOpenKeys={['sub1', 'sub2']}
                     defaultSelectedKeys={[this.state.current]}
                     mode="inline"
                 >
-                    <SubMenu key="sub1" title={<span><Icon type="bars" /><span>子菜单</span></span>}>
-                        <Menu.Item key="1"><Link to="/page1">用redux-thunk获取数据</Link></Menu.Item>
-                        <Menu.Item key="2"><Link to="/page2">用redux-saga获取数据</Link></Menu.Item>
+                        {routes.map((prop, index) => {
+                            if (prop.redirect) return;
+                            if (prop.collapse) {
+                                return (
+                                    <SubMenu key={prop.key} title={<span>{prop.icon}<span>{prop.name}</span></span>}>
+                                        {prop.children.map((prop, index) => {
+                                            if (prop.children) {
+                                                return (
+                                                    <SubMenu key={prop.key} title={<span>{prop.name}</span>}>
+                                                        {prop.children.map((prop, index) => {
+                                                            return <Menu.Item key={prop.key}><Link to={prop.path}>{prop.name}</Link></Menu.Item>;
+                                                        })}
+                                                    </SubMenu>
+                                                )
+                                            }
+                                            return <Menu.Item key={prop.key}><Link to={prop.path}>{prop.name}</Link></Menu.Item>;
+                                        })}
+                                    </SubMenu>
+                                )
+                            }
+                        })}
+                        {/* <Menu.Item key="1"><Link to="/userList">用redux-thunk获取数据</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to="/postList">用redux-saga获取数据</Link></Menu.Item>
                         <Menu.Item key="3"><Link to="/users">测试路由</Link></Menu.Item>
-                        <Menu.Item key="4"><Link to="/page4" >测试路由</Link></Menu.Item>
-                    </SubMenu>
+                    <Menu.Item key="4"><Link to="/page4" >测试路由</Link></Menu.Item> */}
                 </Menu>
             </div>
         );

@@ -1,6 +1,6 @@
 'use strict';
 
-import '../asset/css/style.scss';
+import 'asset/css/style.less';
 import 'antd/dist/antd.min.css';
 import React from 'react';
 import { render } from 'react-dom';

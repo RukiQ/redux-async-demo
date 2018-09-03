@@ -16,7 +16,7 @@ import {
 function* showPostsAsync(action) {
     try {
         const response = yield call(axios.get, GET_POSTS_URL);
-        yield put({ type: GET_POSTS_SUCCESS, posts: response.data });
+        yield put({ type: GET_POSTS_SUCCESS, posts: response.data.data });
     } catch(e) {
         yield put({ type: GET_POSTS_FAIL, error: e });
     }
