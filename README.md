@@ -6,7 +6,8 @@
 
 > 通过路由配置来生成路由的方式是参考了 [Material-UI Theme](https://demos.creative-tim.com/material-dashboard-react/?_ga=2.55719595.10714530.1535703355-492283409.1535703355#/dashboard) 模板中的写法。 尽管在使用这个 UI 框架时，让我很抓狂，但是有些地方还是值得学习的。┐(￣ヮ￣)┌
 
-具体梳理请参考我的博文：[React技术栈整套工程化流程](https://www.jianshu.com/p/088116f02b26)
+☛ [React技术栈整套工程化流程](https://www.jianshu.com/p/088116f02b26)
+☛ [Webpack4+React 项目框架从0到1](https://www.jianshu.com/p/c12d54b6974b) 
 
 ### 一、路由 config
 
